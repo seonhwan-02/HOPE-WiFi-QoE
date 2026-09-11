@@ -27,8 +27,6 @@
 
 **정상 모드(RSSI 100%) vs 혼잡 모드(RTT 60% : 채널사용률 40%) 비교** — 혼잡 환경(Case 2)에서 실제 속도와의 상관계수가 0.233 → 0.626으로 크게 개선되었습니다.
 
-![QoE Comparison](results/hope_120_60_40.png)
-
 **HOPE 하이브리드 모드 적용 결과** — 정상/혼잡 모드를 자동 전환하는 하이브리드 방식이 통합 환경(Case 3)에서 상관계수 0.656 → 0.780으로 개선되었습니다.
 
 ![Hybrid Mode Result](results/hybrid_scatter.png)
@@ -49,7 +47,6 @@ HOPE_WiFi_QoE/
 │   ├── threshold_analysis.py # 데이터 기반 임계값 전수 탐색
 │   └── rssi_influence.py     # RSSI와 주요 지표 간 상관관계 분석
 └── results/                  # 시각화 그래픽 결과물
-    ├── hope_120_60_40.png    # 정상 vs 혼잡 모드 비교
     ├── hybrid_scatter.png    # 하이브리드 산점도 (정상 vs 혼잡)
     └── data_sample.png       # 측정 데이터 예시
 ```
